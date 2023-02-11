@@ -1,0 +1,962 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/1d6d76d856.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Plan Your Travels Today</title>
+</head>
+<body>
+    <!--hidden container content-->
+    
+
+
+
+
+    <h1 class="nav" >Explore1</h1>
+
+    <!--menu-->
+    <input type="checkbox" id="check1">
+    <label for="check1" class="menu">
+            <i class="fas fa-bars"></i>   
+    </label>
+
+    <input type="checkbox" id="check1">
+    <label for="check1" class="close">
+        <i class="fas fa-times"></i>  
+    </label>
+
+
+    <input type="checkbox" id="check2">
+    <label for="check2" class="close2">
+        <i class="fas fa-times"></i>  
+    </label>
+
+
+
+    <ul class="sidebar">
+        <div class="li1">
+            <div class="lo1"> <i class="fas fa-home" ></i>
+            </div>
+         <li><a href="main.html">Home</a></li>
+        </div> 
+         <div class="li2">
+             <div class="lo2"><i class="fas fa-plane"></i>
+             </div>
+             <li><a href="book.html">Book Flight</a></li>
+         </div>
+         <div class="li3">
+             <div class="lo3"><i class="fas fa-suitcase-rolling"></i>
+             </div>
+             <li><a href="plan.html">Plan Trip</a></li>
+         </div>
+        
+ 
+     </ul>
+ 
+<!--search boxes-->
+<input type="checkbox" id="check2">
+<label for="check2"class="search">
+    <i class="fas fa-search"></i>      
+</label>
+<div class="search-box">
+    <input class="search-text" type="text" name="" placeholder="Search">
+    <a href="search"></a>
+  </div>
+  
+
+
+
+
+    <!--contents-->
+
+    <img class="pic1" src="img/img6.jpeg" alt="">
+
+
+    <div class="cont1">
+        <form action="">
+            <input class="box1" type="text" placeholder="  Search for city, state, or country">
+            <input type="text" class="box2" placeholder="  Check in"> <input class="box3" type="text" placeholder=" Check out">
+            <input type="text" class="box4" placeholder="  Travelers">
+           
+        </form>
+
+
+        <form class="sel" action="">
+            <label for="fly">Add flight:</label>
+            <select name="fly" id="fly">
+              <option >First Class</option>
+              <option >Business Class</option>
+              <option >Economy Class</option>
+            </select>
+        </form>
+
+        <form class="sel2" action="">
+            <label for="cars">Add car:</label>
+            <select name="cars" id="cars">
+              <option >Honda</option>
+              <option >Toyota</option>
+              <option >Nissan</option>
+            </select>
+        </form>
+
+
+
+
+            
+            <p class="searchb">Search</p>
+
+
+    </div>
+    <p class="header">Plan out your next trip</p>
+
+    <style>
+        @media(min-width:52px){
+         *{
+        padding: 0px;
+        margin:0px;
+    }
+
+    .header{
+        position:absolute;
+        left:50px;
+        text-align: center;
+        font-size:25px;
+        color:white;
+        font-family: 'Frank Ruhl Libre', serif;
+
+        z-index: 900;
+        top:150px;
+    }
+
+
+    .sel{
+        position:absolute;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        top:130px;
+        left:5px;
+    }
+    .sel2{
+        position:absolute;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        top:160px;
+        left:5px;
+    }
+
+    .searchb{
+        position:absolute;
+        cursor: pointer;
+        top:163px;
+        left:190px;
+        font-size:14px;
+        border-radius: 15px;
+        padding-left:30px;
+        padding-top:2px;
+        width:103px;
+        height:22px;
+        background:black;
+        color:white;
+        transition:0.3s ease;
+
+    }
+    .searchb:hover{
+        color:#44A08D;
+        transition:0.3s ease;
+        transform:scale(0.98);
+        background:#0F2027;
+
+    }
+
+
+    body{
+        background:#0F2027;
+        height:600px;
+        overflow-x:hidden;
+    }
+
+    .cont1{
+        top:200px;
+        background-color:#44A08D;
+        width:100%;
+        height:190px;
+        opacity: 75%;
+        overflow-x:hidden;
+        z-index: 100;
+
+    }
+    .cal1{
+        position:absolute;
+        z-index: 800;
+        top:4px;
+        left:50px;
+        font-size:1px;
+    }
+    .box1{
+        position:absolute;
+        width:100%;
+        height:30px;
+        top:10px;
+        opacity: 100%;
+    }
+    
+
+    .box2{
+        position:absolute;
+        top:50px;
+        left:0px;
+        opacity: 100%;
+        width:100px;
+        height:30px;
+
+    }
+    .box3{
+        position:absolute;
+        top:50px;
+        right:0px;
+        opacity: 100%;
+        width:100px;
+        height:30px;
+    }
+
+    .box4{
+        position:absolute;
+        width:100%;
+        height:30px;
+        top:90px;
+        opacity: 100%;
+    }
+
+
+
+
+.pic1{
+    position:absolute;
+    top:100px;
+    left:0px;
+    width:100%;
+    height:600px;
+    object-fit:cover;
+}
+
+.sidebar{
+        position:fixed;
+    
+        width:0px;
+        top:63px;
+        background-color:#0F2027;
+        right:0px;
+        transition:0.3s ease;
+        z-index: 2000;
+    }
+    .sidebar li{
+        padding-top:20px;
+        padding-left:46px;
+        transition:0.3s ease;
+        height:72px;
+        width:150px;
+        list-style: none;
+      
+    
+    
+    }
+    .sidebar li a{
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size:18px;
+        color:white;
+        text-decoration:none;
+        
+    
+    }
+    
+    .sidebar-list:hover .li1 {
+        color:black;
+    }
+    
+    .li1{
+        transition:0.3s ease;
+    }
+    
+    
+    .li2{
+        transition:0.3s ease;
+    }
+    .li3{
+        transition:0.3s ease;
+    }
+    .li4{
+        transition:0.3s ease;
+    }
+    .li1:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+    
+    .li2:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+    .li3:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+    .li4:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+        }
+
+
+
+
+
+
+
+
+
+
+        @media(min-width:425px){
+
+            *{
+        padding: 0px;
+        margin:0px;
+    }
+
+    #hid-cont{
+        position:absolute;
+        top:400px;
+        z-index: 1000;
+        height:200px;
+        width:100%;
+        background:black;
+        visibility: hidden;
+    }
+
+    .header{
+        position:absolute;
+        left:100px;
+        text-align: center;
+        font-size:30px;
+        color:white;
+        font-family: 'Frank Ruhl Libre', serif;
+
+        z-index: 900;
+        top:130px;
+    }
+
+   
+
+    .sel{
+        position:absolute;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        top:130px;
+        left:5px;
+    }
+    .sel2{
+        position:absolute;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        top:160px;
+        left:5px;
+    }
+
+    .searchb{
+        position:absolute;
+        cursor: pointer;
+        top:163px;
+        font-family: Arial, Helvetica, sans-serif;
+        left:220px;
+        font-size:15px;
+        border-radius: 15px;
+        padding-left:30px;
+        padding-top:7px;
+        width:103px;
+        height:31px;
+        background:black;
+        color:white;
+        transition:0.3s ease;
+
+    }
+    .searchb:hover{
+        color:#44A08D;
+        transition:0.3s ease;
+        transform:scale(0.98);
+
+    }
+
+
+    body{
+        background:#0F2027;
+        height:500px;
+        overflow-x:hidden;
+    }
+
+    .cont1{
+        top:200px;
+        background-color:#44A08D;
+        width:100%;
+        height:200px;
+        opacity: 75%;
+        overflow-x:hidden;
+        z-index: 100;
+
+    }
+    .cal1{
+        position:absolute;
+        z-index: 800;
+        top:4px;
+        left:50px;
+        font-size:1px;
+    }
+    .box1{
+        position:absolute;
+        width:100%;
+        height:30px;
+        top:10px;
+        opacity: 100%;
+    }
+    
+
+    .box2{
+        position:absolute;
+        top:50px;
+        left:0px;
+        opacity: 100%;
+        width:100px;
+        height:30px;
+
+    }
+    .box3{
+        position:absolute;
+        top:50px;
+        right:0px;
+        opacity: 100%;
+        width:100px;
+        height:30px;
+    }
+
+    .box4{
+        position:absolute;
+        width:100%;
+        height:30px;
+        top:90px;
+        opacity: 100%;
+    }
+
+
+
+
+.pic1{
+    position:absolute;
+    top:100px;
+    left:0px;
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.sidebar{
+        position:fixed;
+    
+        width:0px;
+        top:63px;
+        background-color:#0F2027;
+        right:0px;
+        transition:0.3s ease;
+        z-index: 2000;
+    }
+    .sidebar li{
+        padding-top:20px;
+        padding-left:46px;
+        transition:0.3s ease;
+        height:72px;
+        width:150px;
+        list-style: none;
+      
+    
+    
+    }
+    .sidebar li a{
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size:18px;
+        color:white;
+        text-decoration:none;
+        
+    
+    }
+    
+    .sidebar-list:hover .li1 {
+        color:black;
+    }
+    
+    .li1{
+        transition:0.3s ease;
+    }
+    
+    
+    .li2{
+        transition:0.3s ease;
+    }
+    .li3{
+        transition:0.3s ease;
+    }
+    .li4{
+        transition:0.3s ease;
+    }
+    .li1:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+    
+    .li2:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+    .li3:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+    .li4:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+    }
+
+        
+        }
+
+
+
+
+
+        @media(min-width:768px){
+
+        *{
+        padding: 0px;
+        margin:0px;
+        }
+
+        .header{
+        position:absolute;
+        left:200px;
+        text-align: center;
+        font-size:40px;
+        color:white;
+        font-family: 'Frank Ruhl Libre', serif;
+
+        z-index: 900;
+        top:130px;
+    }
+
+        .sel{
+        position:absolute;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        top:130px;
+        left:5px;
+        }
+        .sel2{
+        position:absolute;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        top:160px;
+        left:5px;
+        }
+
+        .searchb{
+        position:absolute;
+        cursor: pointer;
+        top:163px;
+        font-family: Arial, Helvetica, sans-serif;
+        left:320px;
+        font-size:18px;
+        border-radius: 15px;
+        padding-left:30px;
+        padding-top:9px;
+        width:113px;
+        height:40px;
+        background:black;
+        color:white;
+        transition:0.3s ease;
+
+        }
+        .searchb:hover{
+        color:#44A08D;
+        transition:0.3s ease;
+        transform:scale(0.98);
+
+        }
+
+
+        body{
+        background:#0F2027;
+        height:500px;
+        overflow-x:hidden;
+        }
+
+        .cont1{
+        top:250px;
+        background-color:#44A08D;
+        width:100%;
+        height:210px;
+        opacity: 75%;
+        overflow-x:hidden;
+        z-index: 100;
+
+        }
+        .cal1{
+        position:absolute;
+        z-index: 800;
+        top:4px;
+        left:50px;
+        font-size:1px;
+        }
+        .box1{
+        position:absolute;
+        width:100%;
+        height:30px;
+        top:10px;
+        opacity: 100%;
+        }
+
+
+        .box2{
+        position:absolute;
+        top:50px;
+        left:0px;
+        opacity: 100%;
+        width:100px;
+        height:30px;
+
+        }
+        .box3{
+        position:absolute;
+        top:50px;
+        right:0px;
+        opacity: 100%;
+        width:100px;
+        height:30px;
+        }
+
+        .box4{
+        position:absolute;
+        width:100%;
+        height:30px;
+        top:90px;
+        opacity: 100%;
+        }
+
+
+
+
+        .pic1{
+        position:absolute;
+        top:100px;
+        left:0px;
+        width:100%;
+        height:400px;
+        object-fit:cover;
+        }
+
+        .sidebar{
+        position:fixed;
+
+        width:0px;
+        top:63px;
+        background-color:#0F2027;
+        right:0px;
+        transition:0.3s ease;
+        z-index: 2000;
+        }
+        .sidebar li{
+        padding-top:20px;
+        padding-left:46px;
+        transition:0.3s ease;
+        height:72px;
+        width:150px;
+        list-style: none;
+
+
+
+        }
+        .sidebar li a{
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size:18px;
+        color:white;
+        text-decoration:none;
+
+
+        }
+
+        .sidebar-list:hover .li1 {
+        color:black;
+        }
+
+        .li1{
+        transition:0.3s ease;
+        }
+
+
+        .li2{
+        transition:0.3s ease;
+        }
+        .li3{
+        transition:0.3s ease;
+        }
+        .li4{
+        transition:0.3s ease;
+        }
+        .li1:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+        }
+
+        .li2:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+        }
+        .li3:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+        }
+        .li4:hover{
+        transition:0.3s ease;
+        background-color:#44A08D;
+        }
+
+
+        }
+
+
+        @media(min-width:1024px){
+
+*{
+padding: 0px;
+margin:0px;
+}
+
+.header{
+        position:absolute;
+        left:380px;
+        text-align: center;
+        font-size:47px;
+        color:white;
+        font-family: 'Frank Ruhl Libre', serif;
+
+        z-index: 900;
+        top:130px;
+    }
+
+.sel{
+position:absolute;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+top:230px;
+left:5px;
+}
+.sel2{
+position:absolute;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+top:270px;
+left:5px;
+}
+
+.searchb{
+position:absolute;
+cursor: pointer;
+top:253px;
+font-family: Arial, Helvetica, sans-serif;
+left:490px;
+font-size:22px;
+border-radius: 20px;
+padding-left:50px;
+padding-top:9px;
+width:165px;
+height:43px;
+background:black;
+color:white;
+transition:0.3s ease;
+
+}
+.searchb:hover{
+color:#44A08D;
+transition:0.3s ease;
+transform:scale(0.98);
+
+}
+
+
+body{
+background:#0F2027;
+height:500px;
+overflow-x:hidden;
+}
+
+.cont1{
+top:230px;
+background-color:#44A08D;
+width:100%;
+height:320px;
+opacity: 75%;
+overflow-x:hidden;
+z-index: 100;
+
+}
+.cal1{
+position:absolute;
+z-index: 800;
+top:4px;
+left:50px;
+font-size:1px;
+}
+.box1{
+position:absolute;
+width:100%;
+height:50px;
+top:10px;
+opacity: 100%;
+}
+
+
+.box2{
+position:absolute;
+top:80px;
+left:0px;
+opacity: 100%;
+width:200px;
+height:50px;
+
+}
+.box3{
+position:absolute;
+top:80px;
+right:0px;
+opacity: 100%;
+width:200px;
+height:50px;
+}
+
+.box4{
+position:absolute;
+width:100%;
+height:50px;
+top:150px;
+opacity: 100%;
+}
+
+
+
+
+.pic1{
+position:absolute;
+top:80px;
+left:0px;
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+.sidebar{
+position:fixed;
+
+width:0px;
+top:63px;
+background-color:#0F2027;
+right:0px;
+transition:0.3s ease;
+z-index: 2000;
+}
+.sidebar li{
+padding-top:20px;
+padding-left:46px;
+transition:0.3s ease;
+height:72px;
+width:150px;
+list-style: none;
+
+
+
+}
+.sidebar li a{
+font-family: 'Frank Ruhl Libre', serif;
+font-size:18px;
+color:white;
+text-decoration:none;
+
+
+}
+
+.sidebar-list:hover .li1 {
+color:black;
+}
+
+.li1{
+transition:0.3s ease;
+}
+
+
+.li2{
+transition:0.3s ease;
+}
+.li3{
+transition:0.3s ease;
+}
+.li4{
+transition:0.3s ease;
+}
+.li1:hover{
+transition:0.3s ease;
+background-color:#44A08D;
+}
+
+.li2:hover{
+transition:0.3s ease;
+background-color:#44A08D;
+}
+.li3:hover{
+transition:0.3s ease;
+background-color:#44A08D;
+}
+.li4:hover{
+transition:0.3s ease;
+background-color:#44A08D;
+}
+
+
+}
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
